@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  background-color: #FFFCF5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Поисковая строка*/
+* {
+  box-sizing: border-box;
+}
+
+form {
+  margin: 0 auto;
+  background: white;
+  border-radius: 11px;
+}
+
+input,
+.lupa {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input {
+  width: 230 px;
+  height: 26px;
+  padding-left: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 150ms linear;
+}
+
+.lupa {
+  height: 25px;
+  width: 42px;
+  position: absolute;
+  left: 82%;
+  cursor: pointer;
+  border: none;
+}
+
+.lupa:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #000000;
+  font-size: 12px;
+}
+
+input:hover {
+  border-color: #FED978;
+}
+input:focus{
+  border-color: #FED978;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+
+.search {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  padding: 16px;
+  padding-left: 90px;
+}
+
+
+/*верхний сайдбар, кнопки магазин, видео, подборки, логотип*/
+/*полоса*/
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #4C514A;
+}
+
+/*расположение кнопок*/
+.head_line {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  position: relative;
+  left: 26.3%;
+}
+.line {
+  display: grid;
+  justify-content: center;
+  padding: 18px;
+  margin: 0 auto;
+}
+
+/*текст*/
+.head_line_text {
+  color: white;
+  transition: all 150ms linear;
+}
+.head_line_text:hover{
+  color: #FED978;
+}
+.head_line_text1 {
+  color: white;
+  width: 154px;
+  transition: all 150ms linear;
+}
+.head_line_text1:hover{
+  color: #FED978;
+}
+/*логотип*/
+.logo {
+  padding: 5px;
+  padding-right: 90px;
+}
+
+/*аватарка пользователя*/
+.user_logo {
+  padding-top: 13px;
+  padding-left: 100px;
+}
+
+/*главная инфа*/
+.hero {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #FFFCF5;
+}
+.headText {
+  width: 1105px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+.headText::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 56px;
+  background: #FFD360;
+  position: relative;
+  bottom: 50px;
+  right: 18px;
+}
+
+/*Кнопка зарегистрироваться*/
+.register{
+  display: inline-block;
+  width: 330px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #FED978;
+  color: #772B1B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  transition: all 300ms linear;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.register:hover{
+  color: #ffffff;
+  background: #772B1B;
+}
+
+.card-image{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 30px;
+  display: grid;
+  justify-content: center;
+}
+.card-link{
+  user-select: none;
+  display: block;
+  background: none;
+  padding: 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: none;
+  transition: 0.2s ease;
+}
+.swiper-button-next{
+  color: #FED978!important;
+}
+.swiper-button-prev{
+  color: #FED978!important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #FED978!important;
+}
+
+/*магазин*/
+.shop{
+  background-color: #FFFCF5;
+  width: 100%;
+  background: url('../img/DEN\ 3.png') right 0px no-repeat;
+}
+/*Текст книжный магазин*/
+.bookShop {
+  width: 1105px;
+  margin: 0 auto;
+  font-weight:700;
+  font-size: 20px;
+  display: grid;
+  line-height: 2;
+  position: relative;
+  top: 30px;
+}
+.bookShop::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 100px;
+  background: #FFD360;
+  position: relative;
+  bottom: 90px;
+  right: 18px;
+}
+.souv{
+  font-weight: 300;
+}
+.imageShop1{
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+  position: relative;
+  left: 37.5%;
+  top: 75px;
+}
+.imageShop2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  left: 30.5%;
+}
+.book1Sh{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.book2Sh{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 0.13fr);
+}
+.im1:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+.im2:hover{
+  transform: scale(1.05);
+  z-index: 1;
+}
+.im3:hover{
+  transform: scale(1.05);
+  z-index: 1;
+}
+.im4:hover{
+  transform: scale(1.05);
+}
+.im5:hover{
+  transform: scale(1.05);
+}
+/*Кнопка В магазин*/
+.inShop{
+  display: inline-block;
+  width: 330px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #FED978;
+  color: #772B1B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  transition: all 300ms linear;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 5.25%;
+  margin-bottom: 2.5%;
+}
+.inShop:hover{
+  color: #ffffff;
+  background: #772B1B;
+}
+/*Реклама*/
+.recl{
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0px;
+}
+
+[data-switcher] {
+  display: grid;
+  margin-top: 0;
+  padding: 0em 0em 0em;
+}
+[data-switcher-show] {
+  display: inline-block;
+  padding: 0px;
+  cursor: pointer;
+}
+[data-switcher-name]:not(.selected) {
+display: none;
+}
+.switcher {
+  list-style-type: none;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  left: 4%;
+  grid-template-columns: repeat(3, 0.15fr);
+  margin-top: 70px;
+}
+.allVideo{
+  display: inline-block;
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #FED978;
+  color: #772B1B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  transition: all 300ms linear;
+  padding: 20px;
+}
+.collections{
+  display: inline-block;
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #FED978;
+  color: #772B1B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  transition: all 300ms linear;
+  padding: 20px;
+}
+.articles{
+  display: inline-block;
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #FED978;
+  color: #772B1B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  transition: all 300ms linear;
+  padding: 20px;
+}
+.videoBtn, .collectionsBtn, .articlesBtn{
+  border: none;
+  background-color: #FFFCF5;
+}
+.articlesContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 439px);
+  justify-content: center;
+  list-style: none;
+  margin-top: 100px;
+}
+.articleName{
+  display: grid;
+  font-weight: 300;
+  margin-left: 35px;
+  margin-top: 100px;
+  margin-left: -190px;
+  width: 150%;
+}
+.articleName2{
+  display: grid;
+  margin-top: -50px;
+  font-weight: bold;
+}
+.articleImg1{
+  width: 309px;
+  height: 309px;
+  margin-left: -120px;
+}
+.articleBtn{
+  display: inline-block;
+  width: 124px;
+  height: 36.8px;
+  cursor: pointer;
+  background-color:#772B1B;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  padding: 8px;
+  margin-top: 150px;
+
+}
+
+.articleName3{
+  display: grid;
+  margin-top: 100px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: -280px;
+  width: 500px;
+}
+.articleName4{
+  display: grid;
+  margin-top: 10px;
+  font-weight: 300;
+  text-align: right;
+  margin-left: -530px;
+  width: 750px;
+}
+.articleImg2{
+  transform: scale(0.5, 1);
+  margin-left: 570px;
+}
+.articleBtn2{
+  display: inline-block;
+  width: 124px;
+  height: 36.8px;
+  cursor: pointer;
+  background-color:#772B1B;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px #00000062;
+  padding: 8px;
+  margin-top: 125px;
+  margin-left: 90px;
+}
+
+
+
+/*Видео*/
+.videoPlay{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 566px);
+  margin-top: 100px;
+  gap: 40px;
+  list-style-type: none;
+  background: url('../img/DEN\ 3.svg') right 1500px no-repeat;
+}
+.decorated{
+  background: url('../img/star2.svg') left 300px no-repeat;
+}
+.decorated-inner{
+  background: url('../img/DEN\ 3.png') right -1100px no-repeat;
+}
+.back{
+  background: url('../img/DEN\ 3.png') right 2000px no-repeat;
+}
+.videoV{
+  width: 480px;
+  height: 270px;
+}
+.videoName{
+  margin-left: 9px;
+  margin-top: 8px;
+  margin-bottom: 70px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.videoName2{
+  font-size: 18px;
+  font-weight: 300;
+}
+.videoDescription{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 0px);
+  gap: 35px;
+}
+.textViews{
+  margin-left: -8px;
+}
+
+like-container {
+  display: flex;
+  align-items: center;
+} 
+.like-button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 8px;
+}
+
+/*Самый низ сайта*/
+.footerContainer {
+  background: #4C514A;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-social img {
+  width: 24px;
+  margin: 0 10px;
+}
+.footer-copyright {
+  margin-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+.collectionPlay{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 566px);
+  margin-top: 100px;
+  gap: 40px;
+  list-style-type: none;
+  margin-left: 290px;
+}
+.collectionImg2{
+  transform: scale(0.5, 1);
+  margin-left: -142px;
+}
+.collectionName3{
+display: grid;
+margin-left: -260px;
+} 
+.collectionImg3{
+  margin-left: -260px;
+}
+.collectionImg5{
+  transform: scale(0.5, 1);
+  margin-left: -118px;
+}
+.collectionName5{
+  display: grid;
+  margin-left: 24px;
+  } 
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+  .head_line {
+    left: 15%;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .headText, .bookShop {
+    width: 90%;
+  }
+  .videoPlay {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .head_line {
+    left: 5%;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .search {
+    padding-left: 30px;
+  }
+  .user_logo {
+    padding-left: 30px;
+  }
+  .videoPlay {
+    grid-template-columns: 1fr;
+  }
+  .switcher {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    left: 0;
+  }
+  .allVideo, .collections, .articles {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .head_line {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .line:nth-child(2), .line:nth-child(3), .line:nth-child(4) {
+    display: none;
+  }
+  .register, .inShop {
+    width: 90%;
+  }
+}
+
+/* Стили для форм */
+dialog {
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.dialog-content h2 {
+  color: #772B1B;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 15px;
+  border: 2px solid #4C514A;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #FED978;
+  outline: none;
+}
+
+.auth-form button {
+  background-color: #FED978;
+  color: #772B1B;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 300ms linear;
+  margin-top: 10px;
+}
+
+.auth-form button:hover {
+  background-color: #772B1B;
+  color: white;
+}
+
+.switch-form {
+  background: none;
+  border: none;
+  color: #4C514A;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.close-dialog {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-dialog img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Затемнение фона при открытом диалоге */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+/* Адаптивный header */
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+.mobile-header {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color:#FFD360;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 992px) {
+  .head_line {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background-color: #4C514A;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 70px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    margin: 0;
+    grid-template-columns: 1fr !important;
+    left: auto !important;
+}
+  
+  .head_line.active {
+      right: 0;
+  }
+  
+  .line {
+    padding: 0px 0 !important;
+    margin-top: 10px !important;
+    width: 100%;
+    justify-content: center;
+}
+  
+  .search {
+      padding: 200px 0 !important;
+      padding-left: 150px !important;
+      width: 100%;
+      margin: 100px 100px 100px -110px;
+      margin-top: -660px;
+  }
+  .lupa {
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    left: 82%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .user_logo {
+    padding: 0 !important;
+}
+  
+  .mobile-header {
+      display: flex;
+  }
+  
+  .burger {
+      display: block;
+  }
+  
+  .burger.active span:nth-child(1) {
+      transform: rotate(40deg) translate(5px, 5px);
+  }
+  
+  .burger.active span:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .burger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  /* Скрываем дублирующиеся элементы */
+  .logo:not(.mobile-header .logo) {
+    display: none;
+}
+  
+  .user-container {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .head_line {
+      width: 50%;
+  }
+  .search{
+    padding: 200px 0 !important;
+      padding-left: 150px !important;
+      width: 100%;
+      margin: 100px 100px 100px -110px;
+      margin-top: -660px;
+  }
+  .lupa {
+    height: 25px;
+    width: 90px;
+    position: absolute;
+    left: 82%;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.like-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+
+.like-button.liked {
+  color: #ff0000;
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.like-count {
+  font-size: 16px;
+  color: #333;
+}
